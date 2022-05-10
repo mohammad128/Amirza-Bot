@@ -38,10 +38,11 @@ if (isset($_POST['chars'])) {
 //        echo $len . ':' . $item->getWord() . '<BR/>';
     }
     ?>
-    <h1 class="text-center text-3xl font-bold py-4"><?= count($foundedWords) ?> Result</h1>
+    <h1 class="text-center text-3xl font-bold py-4 maxw"><?= count($foundedWords) ?> Result</h1>
+    <div class="gap-8 columns-3 min-h-screen min-w-screen" >
     <?php
     foreach ($res as $key=>$items) {
-        echo '<div class="mx-24 bg-green-200 text-justify px-6 mb-4">';
+        echo '<div class=" bg-green-200 w-full text-justify px-6 mb-4">';
         echo "<h2 class='font-bold'>{$key} Charapter:<h2/>";
         ?>
             <ul class="list-disc">
@@ -57,7 +58,9 @@ if (isset($_POST['chars'])) {
         <?php
         echo '</div>';
     }
-
+    ?>
+    </div>
+    <?php
 }
 else {
     ?>
