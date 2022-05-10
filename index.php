@@ -7,7 +7,6 @@
     <title>Amirza Bot</title>
 </head>
 <body>
-
 <?php
 ini_set('memory_limit', '440M');
 
